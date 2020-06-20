@@ -1,0 +1,31 @@
+<h1>Follow on Football news and results below</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Premier League Table</th>
+        </tr>
+        <tr>
+          <td>Position</td>
+          <td>Name</td>
+          <td>Played</td>
+          <td>Won</td>
+          <td>Draw</td>
+          <td>Loss</td>
+          <td>Points</td>
+        </tr>
+    </thead>
+    <tbody>
+      <% @total.each do |team| %>
+         <tr>
+            <td><%= team[:position] %></td>
+            <td><%= team[:name] %></td>
+            <td><%= team[:played] %></td>
+            <td><%= team[:wins] %></td>
+            <td><%= team[:draws] %></td>
+            <td><%= team[:losses] %></td>
+            <td><%= team[:points] %></td>
+        </tr>
+        <% end  %>
+    </tbody>
+</table>

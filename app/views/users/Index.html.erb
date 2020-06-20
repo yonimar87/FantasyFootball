@@ -1,0 +1,7 @@
+<h1>Welcome back to  Fantasy Football </h1>
+<%= @current_user %>
+<% if @current_user.present?  %>
+<%= link_to "My Team", my_team_path %>
+<% else %>
+<p>Click on one of the below links to play the game</p>
+<% end  %>
