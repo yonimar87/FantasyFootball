@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   def my_players
   end
 
-  def my_team
+  def standings
   end
 
   private

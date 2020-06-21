@@ -26,6 +26,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'standings'
 gem 'nokogiri'
+gem 'uri'
+gem 'openssl'
+gem 'net'
+gem 'json'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -45,9 +50,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails'
-  # gem 'uri'
-  # gem 'openssl'
-  # gem 'lita-espn-fantasy-football', '~> 0.1.0'
+
 end
 
 

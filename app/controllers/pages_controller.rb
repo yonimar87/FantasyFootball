@@ -9,7 +9,28 @@ class PagesController < ApplicationController
     @site = Nokogiri::HTML(open(url))
     @team_data = @site.css('.table--league-table tbody tr')
     @total = build_teams @team_data
+
+    url2 = "https://www.theguardian.com/football/championship/table"
+    @site2 = Nokogiri::HTML(open(url2))
+    @team_data2 = @site2.css('.table--league-table tbody tr')
+    @total2 = build_teams @team_data2
+
+    url3 = "https://www.theguardian.com/football/leagueonefootball/table"
+    @site3 = Nokogiri::HTML(open(url3))
+    @team_data3 = @site3.css('.table--league-table tbody tr')
+    @total3 = build_teams @team_data3
+
+    url4 = URI("https://livescore6.p.rapidapi.com/matches/list-by-league?category=soccer&league=england")
+    http = Net::HTTP.new(url4.host, url4.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    request = Net::HTTP::Get.new(url4)
+    request["x-rapidapi-host"] = 'livescore6.p.rapidapi.com'
+    request["x-rapidapi-key"] = 'd8e9e76cbamsh5844043ab7934adp1a346djsn6bd439b49aa1'
+    @response = JSON.parse(http.request(request).read_body)
   end
+
+
 
   def build_teams(team_data_xml)
       team_data_xml.length.times.map do |i|
