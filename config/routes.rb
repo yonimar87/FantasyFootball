@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get 'teams/show'
   resources :players
   root :to => 'pages#home'
-  resources :users, :only => [:index, :new, :create, :my_team, :my_players]#:except => [:destroy]
+  resources :users, :only => [:index, :new, :create, :my_team, :my_players]
+  put '/add_users' => 'users#add_player'#:except => [:destroy]
+  resources :teams, :only => :show
 
   get '/results' => 'pages#results'
   get '/my_team' => 'users#standings', :as => 'standings'

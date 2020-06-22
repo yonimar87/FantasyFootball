@@ -72,15 +72,16 @@ puts "#{ Player.count } players available"
 
 Team.destroy_all
 t1 = Team.create :name => 'Manchester United', :established => '1881', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
-t2 = Team.create :name => 'Chelsea', :established => '1980', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
-t3 = Team.create :name => 'Leicester City', :established => '1562', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
-t4 = Team.create :name => 'Liverpool', :established => '1111', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
+t2 = Team.create :name => 'Liverpool', :established => '1980', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
+t3 = Team.create :name => 'Manchester City', :established => '1562', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
+t4 = Team.create :name => 'Leicester', :established => '1111', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 # t5 = Team.create :name => 'Manchester City', :established => '1888', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 # t6 = Team.create :name => 'Arsenal', :established => '2002', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 
 puts "#{ Team.count } teams"
 
 Nationality.destroy_all
+n0 = Nationality.create :country => 'Unknown'
 n1 = Nationality.create :country => 'England', :image => 'https://abcsports.com.au/bmz_cache/d/d6e6319aa36cab636d8ecbabbd5f56d7.image.500x500.jpg'
 n2 = Nationality.create :country => 'Spain', :image => 'https://abcsports.com.au/bmz_cache/d/d6e6319aa36cab636d8ecbabbd5f56d7.image.500x500.jpg'
 n3 = Nationality.create :country => 'Netherlands', :image => 'https://abcsports.com.au/bmz_cache/d/d6e6319aa36cab636d8ecbabbd5f56d7.image.500x500.jpg'

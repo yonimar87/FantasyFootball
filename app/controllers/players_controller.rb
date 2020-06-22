@@ -14,5 +14,10 @@ class PlayersController < ApplicationController
 
   def show
     @player = Player.find params[:id]
+    if Nationality.exists?(id: @player.nationality_id)
+    @nationality = Nationality.find(@player.nationality_id)
+    else
+    @nationality = Nationality.where(:country => 'Unknown').first
+    end
   end
 end

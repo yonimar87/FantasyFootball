@@ -1,16 +1,9 @@
-<h1>Please see all players below</h1>
-<% @players.each do |player| %>
-  <%= image_tag player.image, :class =>'thumb' if player.image.present? %>
-<p>
-    <%= link_to player.name, player_path(player.id) %>
-    Price: <%= player.price %>
-    <%= check_box("tag", player.id, {checked: false}) %>
-</p>
-<% end %>
+<h1>Please see all available teams below</h1>
+
 <% @teams.each do |t| %>
 <%= image_tag t.image, :class =>'thumb' if t.image.present? %>
-<%= link_to t.name, teams_show_path(t.id) %>
+<%= link_to t.name, team_path(t.id) %>
 <p>
-    <%= t.name %>
+
 </p>
 <% end %>

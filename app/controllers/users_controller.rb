@@ -19,7 +19,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def my_players
+  def add_player
+
   end
 
   def standings
