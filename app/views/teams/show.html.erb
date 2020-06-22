@@ -1,0 +1,8 @@
+<h1>Below are <%= @team.name %> players</h1>
+<% @players.each do |player| %>
+  <%= image_tag player.image, :class =>'thumb' if player.image.present? %>
+<p>
+    <%= link_to player.name, player_path(player.id) %>
+    Price: <%= player.price %>
+    <%= check_box("tag", player.id, {checked: false}) %>
+</p>

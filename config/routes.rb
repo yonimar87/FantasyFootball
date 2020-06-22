@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'teams/show'
+  resources :players
   root :to => 'pages#home'
   resources :users, :only => [:index, :new, :create, :my_team, :my_players]#:except => [:destroy]
 

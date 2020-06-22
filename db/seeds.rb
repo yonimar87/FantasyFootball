@@ -5,7 +5,7 @@ puts "#{ User.count } users"
 
 Player.destroy_all
 p1 = Player.create :price => 7,:name => 'Marcus Rashford', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p2 = Player.create :price => 8,:name => 'Bruno Fernandez', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p2 = Player.create :price => 8,:name => 'Bruno Fernandez', :position => 'Midfielder', :image =>  'https://s.yimg.com/uu/api/res/1.2/etL9cKw4xPNftgypkbbEYQ--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/uk.goal.com/fafd2877cfee5b51abd54d16a9dca1df'
 p3 = Player.create :price => 6,:name => 'Paul Pogba', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
 p4 = Player.create :price => 5,:name => 'David De Gea', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
 p5 = Player.create :price => 5,:name => 'Harry Maguire', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
@@ -75,8 +75,8 @@ t1 = Team.create :name => 'Manchester United', :established => '1881', :country 
 t2 = Team.create :name => 'Chelsea', :established => '1980', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 t3 = Team.create :name => 'Leicester City', :established => '1562', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 t4 = Team.create :name => 'Liverpool', :established => '1111', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
-t5 = Team.create :name => 'Manchester City', :established => '1888', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
-t6 = Team.create :name => 'Arsenal', :established => '2002', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
+# t5 = Team.create :name => 'Manchester City', :established => '1888', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
+# t6 = Team.create :name => 'Arsenal', :established => '2002', :country => 'England', :image => 'https://i.pinimg.com/originals/c0/85/dd/c085ddfcca1e66bd151ffb82a0a0d8a0.jpg'
 
 puts "#{ Team.count } teams"
 
@@ -100,8 +100,7 @@ t1.players << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 <
 t2.players << p16 << p17 << p18 << p19 << p20 << p21 << p22 << p23 << p24 << p25 << p26 << p27 << p28 << p29 << p30
 t3.players << p31 << p32 << p33 << p34 << p35 << p36 << p37 << p38 << p39 << p40 << p41 << p42 << p43 << p44 << p45
 t4.players << p46 << p47 << p48 << p49 << p50 << p51 << p52 << p53 << p54 << p55 << p56 << p57 << p58 << p59 << p60
-t5.players << p1 << p22 << p33 << p44 << p55 << p60 << p7 << p18 << p19 << p22 << p21 << p32 << p13 << p14 << p15
-t6.players << p1 << p2 << p3 << p4 << p5 << p6 << p7 << p8 << p9 << p10 << p11 << p12 << p13 << p14 << p15
+
 
 puts "Nationalities and players"
 n1.players << p1 << p5 << p8 << p11 << p12 << p14 << p20 << p21 << p22 << p23 << p25 << p30

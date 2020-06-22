@@ -1,0 +1,9 @@
+<h1><%= @player.name %></h1>
+
+  <%= image_tag @player.image, :class =>'feature' if @player.image.present? %>
+  <ul>
+    <li>Name: <%= @player.name %></li>
+    <li>Nationality: <%= @player.nationality_id %></li>
+    <li>Position: <%= @player.position %></li>
+    <li>Price:  <%= @player.price %></li>
+  </ul>
