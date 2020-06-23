@@ -7,69 +7,69 @@ u2 = User.create :email => 'kale@kale.com', :password => 'kale'
 puts "#{ User.count } users"
 
 Player.destroy_all
-p1 = Player.create :price => 7,:name => 'Marcus Rashford', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p2 = Player.create :price => 8,:name => 'Bruno Fernandez', :position => 'Midfielder', :image =>  'https://s.yimg.com/uu/api/res/1.2/etL9cKw4xPNftgypkbbEYQ--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/uk.goal.com/fafd2877cfee5b51abd54d16a9dca1df'
-p3 = Player.create :price => 6,:name => 'Paul Pogba', :position => 'Midfielder', :image =>  'https://www.telegraph.co.uk/content/dam/football/2019/12/17/TELEMMGLPICT000218907322_trans%2B%2BhasgUMiR-rxiRxu9qBoVLWQtiI2hkxiZmOHW6aD3Ia4.jpeg'
-p4 = Player.create :price => 5,:name => 'David De Gea', :position => 'Goalkeeper', :image =>  'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skysports.com%2Ffootball%2Fnews%2F11095%2F11962647%2Fmanchester-uniteds-david-de-gea-and-peter-schmeichel-among-keepers-in-awe-of-kid-practising-in-isolation&psig=AOvVaw3zO2KdaI3RTIFBlMxeBeYj&ust=1592966209818000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjf6NrzluoCFQAAAAAdAAAAABAI'
-p5 = Player.create :price => 5,:name => 'Harry Maguire', :position => 'Defender', :image =>  'https://i2-prod.manchestereveningnews.co.uk/incoming/article18227548.ece/ALTERNATES/s615/1_GettyImages-1206106266.jpg'
-p6 = Player.create :price => 3,:name => 'Eric Bailly', :position => 'Defender', :image =>  'https://specials-images.forbesimg.com/imageserve/1201558632/960x0.jpg?cropX1=408&cropX2=2894&cropY1=0&cropY2=1990'
-p7 = Player.create :price => 5,:name => 'Victor Lindelof', :position => 'Defender', :image =>  'https://d3vlf99qeg6bpx.cloudfront.net/content/uploads/2020/03/26112651/Victor.Lindelof.jpg'
-p8 = Player.create :price => 1,:name => 'Luke Shaw', :position => 'Defender', :image =>  'https://images.daznservices.com/di/library/GOAL/a8/3/luke-shaw-manchester-united_fe2rlnbvhl2l13rb40rryc98n.jpg?t=2127942864&quality=60&w=1200&h=800'
-p9 = Player.create :price => 2,:name => 'Fred', :position => 'Midfielder', :image =>  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuNTGpYnEFSPdCifBPr-YFhPZN-2t4IT0ogxyG3fGNF4Hu8-Ja&usqp=CAU'
-p10 = Player.create :price => 6,:name => 'Anthony Martial', :position => 'Striker', :image =>  'https://i0.wp.com/sportytell.com/wp-content/uploads/2020/03/Anthony-Martial-Biography-Facts-Childhood-Net-Worth-Life-1.jpg?fit=912%2C516&ssl=1'
-p11 = Player.create :price => 3,:name => 'Mason Greenwood', :position => 'Striker', :image =>  'https://images.daznservices.com/di/library/GOAL/30/9a/mason-greenwood-manchester-united_iz8uk7h0nu8w1e4urnzldtiem.jpg?t=445418223&quality=100'
-p12 = Player.create :price => 3,:name => 'Phil Jones', :position => 'Defender', :image =>  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVzH-L1noff_-2azulSyNIWwpmjHXkq9DLQBsol4Y4uPwZqsm4&usqp=CAU'
-p13 = Player.create :price => 9,:name => 'Juan Mata', :position => 'Midfielder', :image =>  'https://i2-prod.manchestereveningnews.co.uk/incoming/article17222081.ece/ALTERNATES/s615/0_GettyImages-1180763564.jpg'
-p14 = Player.create :price => 4,:name => 'Jesse Lingard', :position => 'Midfielder', :image =>  'https://cdn.mos.cms.futurecdn.net/yfBR8qBLfTPtkniSC3PpXE-320-80.jpg'
-p15 = Player.create :price => 5,:name => 'Andreas Pereira', :position => 'Midfielder', :image =>  'https://s.hs-data.com/bilder/spieler/gross/252185.jpg'
+p1 = Player.create :score => 7,:name => 'Marcus Rashford', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p2 = Player.create :score => 8,:name => 'Bruno Fernandez', :position => 'Midfielder', :image =>  'https://s.yimg.com/uu/api/res/1.2/etL9cKw4xPNftgypkbbEYQ--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/uk.goal.com/fafd2877cfee5b51abd54d16a9dca1df'
+p3 = Player.create :score => 6,:name => 'Paul Pogba', :position => 'Midfielder', :image =>  'https://www.telegraph.co.uk/content/dam/football/2019/12/17/TELEMMGLPICT000218907322_trans%2B%2BhasgUMiR-rxiRxu9qBoVLWQtiI2hkxiZmOHW6aD3Ia4.jpeg'
+p4 = Player.create :score => 5,:name => 'David De Gea', :position => 'Goalkeeper', :image =>  'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.skysports.com%2Ffootball%2Fnews%2F11095%2F11962647%2Fmanchester-uniteds-david-de-gea-and-peter-schmeichel-among-keepers-in-awe-of-kid-practising-in-isolation&psig=AOvVaw3zO2KdaI3RTIFBlMxeBeYj&ust=1592966209818000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjf6NrzluoCFQAAAAAdAAAAABAI'
+p5 = Player.create :score => 5,:name => 'Harry Maguire', :position => 'Defender', :image =>  'https://i2-prod.manchestereveningnews.co.uk/incoming/article18227548.ece/ALTERNATES/s615/1_GettyImages-1206106266.jpg'
+p6 = Player.create :score => 3,:name => 'Eric Bailly', :position => 'Defender', :image =>  'https://specials-images.forbesimg.com/imageserve/1201558632/960x0.jpg?cropX1=408&cropX2=2894&cropY1=0&cropY2=1990'
+p7 = Player.create :score => 5,:name => 'Victor Lindelof', :position => 'Defender', :image =>  'https://d3vlf99qeg6bpx.cloudfront.net/content/uploads/2020/03/26112651/Victor.Lindelof.jpg'
+p8 = Player.create :score => 1,:name => 'Luke Shaw', :position => 'Defender', :image =>  'https://images.daznservices.com/di/library/GOAL/a8/3/luke-shaw-manchester-united_fe2rlnbvhl2l13rb40rryc98n.jpg?t=2127942864&quality=60&w=1200&h=800'
+p9 = Player.create :score => 2,:name => 'Fred', :position => 'Midfielder', :image =>  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuNTGpYnEFSPdCifBPr-YFhPZN-2t4IT0ogxyG3fGNF4Hu8-Ja&usqp=CAU'
+p10 = Player.create :score => 6,:name => 'Anthony Martial', :position => 'Striker', :image =>  'https://i0.wp.com/sportytell.com/wp-content/uploads/2020/03/Anthony-Martial-Biography-Facts-Childhood-Net-Worth-Life-1.jpg?fit=912%2C516&ssl=1'
+p11 = Player.create :score => 3,:name => 'Mason Greenwood', :position => 'Striker', :image =>  'https://images.daznservices.com/di/library/GOAL/30/9a/mason-greenwood-manchester-united_iz8uk7h0nu8w1e4urnzldtiem.jpg?t=445418223&quality=100'
+p12 = Player.create :score => 3,:name => 'Phil Jones', :position => 'Defender', :image =>  'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVzH-L1noff_-2azulSyNIWwpmjHXkq9DLQBsol4Y4uPwZqsm4&usqp=CAU'
+p13 = Player.create :score => 9,:name => 'Juan Mata', :position => 'Midfielder', :image =>  'https://i2-prod.manchestereveningnews.co.uk/incoming/article17222081.ece/ALTERNATES/s615/0_GettyImages-1180763564.jpg'
+p14 = Player.create :score => 4,:name => 'Jesse Lingard', :position => 'Midfielder', :image =>  'https://cdn.mos.cms.futurecdn.net/yfBR8qBLfTPtkniSC3PpXE-320-80.jpg'
+p15 = Player.create :score => 5,:name => 'Andreas Pereira', :position => 'Midfielder', :image =>  'https://s.hs-data.com/bilder/spieler/gross/252185.jpg'
 
-p16 = Player.create :price => 5,:name => 'Adrian', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p17 = Player.create :price => 5,:name => 'Alisson Becker', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p18 = Player.create :price => 9,:name => 'Virgil Van Dijk', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p19 = Player.create :price => 1,:name => 'Matip', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p20 = Player.create :price => 4,:name => 'Clyne', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p21 = Player.create :price => 5,:name => 'TAA', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p22 = Player.create :price => 77,:name => 'Milner', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p23 = Player.create :price => 4,:name => 'Lallana', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p24 = Player.create :price => 4,:name => 'Fabinho', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p25 = Player.create :price => 5,:name => 'Ox', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p26 = Player.create :price => 5,:name => 'Firmino', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p27 = Player.create :price => 5,:name => 'Salah', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p28 = Player.create :price => 5,:name => 'Mane', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p29 = Player.create :price => 1,:name => 'Origi', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p30 = Player.create :price => 1,:name => 'Henderson', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p16 = Player.create :score => 5,:name => 'Adrian', :position => 'Goalkeeper', :image =>  'https://pbs.twimg.com/profile_images/1163433634650624001/k2IaLSnQ_400x400.jpg'
+p17 = Player.create :score => 5,:name => 'Alisson Becker', :position => 'Goalkeeper', :image =>  'https://images.daznservices.com/di/library/GOAL/3e/71/alisson-liverpool-2018-19_17c2utm8cendl16nel5bwv108t.jpg?t=699792108&quality=100'
+p18 = Player.create :score => 9,:name => 'Virgil Van Dijk', :position => 'Defender', :image =>  'https://img2.thejournal.ie/article/4630929/river?version=4630930&width=1340'
+p19 = Player.create :score => 1,:name => 'Matip', :position => 'Defender', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/a/ab/JMatip2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042201'
+p20 = Player.create :score => 4,:name => 'Clyne', :position => 'Defender', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/3/37/NClyne2018.jpeg/revision/latest/scale-to-width-down/340?cb=20180809022957'
+p21 = Player.create :score => 5,:name => 'TAA', :position => 'Defender', :image =>  'https://resources.premierleague.com/photos/2019/11/12/6bcdfe89-7e03-4f4b-9090-9c8d2cb6c514/alexander-arnold-liv-applause.png?width=860&height=573'
+p22 = Player.create :score => 77,:name => 'Milner', :position => 'Midfielder', :image =>  'https://pbs.twimg.com/profile_images/1159572940347912193/kM-YCqpY_400x400.jpg'
+p23 = Player.create :score => 4,:name => 'Lallana', :position => 'Midfielder', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/b/ba/ALallana2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042158'
+p24 = Player.create :score => 4,:name => 'Fabinho', :position => 'Midfielder', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/3/30/Fabinho2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042206'
+p25 = Player.create :score => 5,:name => 'Ox', :position => 'Midfielder', :image =>  'https://ss.thgim.com/third-party/opta/article29225570.ece/alternates/FREE_380/oxlade-chamberlaincropped14p2422557f6j1xkyqbq2is39kjpg'
+p26 = Player.create :score => 5,:name => 'Firmino', :position => 'Striker', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/f/f3/RFirmino2019.jpeg/revision/latest?cb=20190807042207'
+p27 = Player.create :score => 5,:name => 'Salah', :position => 'Striker', :image =>  'https://resources.premierleague.com/photos/2019/08/15/d09c426f-b3ac-4b23-a2ae-b73a9a9ede77/Mohamed-Salah.jpg?width=930&height=620'
+p28 = Player.create :score => 5,:name => 'Mane', :position => 'Striker', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/b/bc/SMane2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042616'
+p29 = Player.create :score => 1,:name => 'Origi', :position => 'Striker', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/1/12/DOrigi2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042203'
+p30 = Player.create :score => 1,:name => 'Henderson', :position => 'Midfielder', :image =>  'https://vignette.wikia.nocookie.net/liverpoolfc/images/f/ff/JHenderson2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042202'
 
-p31 = Player.create :price => 5,:name => 'Bravo', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p32 = Player.create :price => 5,:name => 'Ederson', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p33 = Player.create :price => 5,:name => 'Fernandinho', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p34 = Player.create :price => 5,:name => 'Walker', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p35 = Player.create :price => 5,:name => 'Stones', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p36 = Player.create :price => 5,:name => 'Laporte', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p37 = Player.create :price => 5,:name => 'Silva', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p38 = Player.create :price => 5,:name => 'Bernando Silva', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p39 = Player.create :price => 5,:name => 'KDB', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p40 = Player.create :price => 5,:name => 'Rodri', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p41 = Player.create :price => 5,:name => 'Foden', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p42 = Player.create :price => 5,:name => 'Aguero', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p43 = Player.create :price => 5,:name => 'Jesus', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p44 = Player.create :price => 5,:name => 'Sane', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p45 = Player.create :price => 5,:name => 'Sterling', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p31 = Player.create :score => 5,:name => 'Bravo', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p32 = Player.create :score => 5,:name => 'Ederson', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p33 = Player.create :score => 5,:name => 'Fernandinho', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p34 = Player.create :score => 5,:name => 'Walker', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p35 = Player.create :score => 5,:name => 'Stones', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p36 = Player.create :score => 5,:name => 'Laporte', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p37 = Player.create :score => 5,:name => 'Silva', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p38 = Player.create :score => 5,:name => 'Bernando Silva', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p39 = Player.create :score => 5,:name => 'KDB', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p40 = Player.create :score => 5,:name => 'Rodri', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p41 = Player.create :score => 5,:name => 'Foden', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p42 = Player.create :score => 5,:name => 'Aguero', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p43 = Player.create :score => 5,:name => 'Jesus', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p44 = Player.create :score => 5,:name => 'Sane', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p45 = Player.create :score => 5,:name => 'Sterling', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
 
-p46 = Player.create :price => 5,:name => 'Schmeichel', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p47 = Player.create :price => 5,:name => 'Ward', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p48 = Player.create :price => 5,:name => 'Evans', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p49 = Player.create :price => 5,:name => 'Pereira', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p50 = Player.create :price => 5,:name => 'Chilwell', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p51 = Player.create :price => 5,:name => 'James', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p52 = Player.create :price => 5,:name => 'Tielemans', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p53 = Player.create :price => 5,:name => 'Maddison', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p54 = Player.create :price => 5,:name => 'Ndidi', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p55 = Player.create :price => 5,:name => 'Vardy', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p56 = Player.create :price => 5,:name => 'Iheanacho', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p57 = Player.create :price => 5,:name => 'Gray', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p58 = Player.create :price => 5,:name => 'Barnes', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p59 = Player.create :price => 5,:name => 'Choudhury', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
-p60 = Player.create :price => 5,:name => 'Justin', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p46 = Player.create :score => 5,:name => 'Schmeichel', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p47 = Player.create :score => 5,:name => 'Ward', :position => 'Goalkeeper', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p48 = Player.create :score => 5,:name => 'Evans', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p49 = Player.create :score => 5,:name => 'Pereira', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p50 = Player.create :score => 5,:name => 'Chilwell', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p51 = Player.create :score => 5,:name => 'James', :position => 'Defender', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p52 = Player.create :score => 5,:name => 'Tielemans', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p53 = Player.create :score => 5,:name => 'Maddison', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p54 = Player.create :score => 5,:name => 'Ndidi', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p55 = Player.create :score => 5,:name => 'Vardy', :position => 'Midfielder', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p56 = Player.create :score => 5,:name => 'Iheanacho', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p57 = Player.create :score => 5,:name => 'Gray', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p58 = Player.create :score => 5,:name => 'Barnes', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p59 = Player.create :score => 5,:name => 'Choudhury', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
+p60 = Player.create :score => 5,:name => 'Justin', :position => 'Striker', :image =>  'https://s.yimg.com/ny/api/res/1.2/OM4VUNDofo3xZ3vYjihw6A--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/uk.goal.com/edd3386640afaa7073aa73ac08ca6906'
 
 puts "#{ Player.count } players available"
 
@@ -115,3 +115,41 @@ n4.players << p9 << p15 << p17 << p24 << p26
 n6.players << p2
 n7.players << p7
 n8.players << p27 << p28
+
+
+
+
+# fav1 = Favorite.create :food => f1, :user => u1 # CArol did this for favorites.
+# fav2 = Favorite.create :region => s2, :user => u1 # CArol did this for favorites.
+# fav3 = Favorite.create :restaurant => r3, :user => u1 # CArol did this for favorites.
+
+# then go to routes -
+#post '/favorite/food/:id' => 'favorites#add_food', :as => "favorite_food"
+#post '/favorite/restarant/:id' => 'favorites#add_restaurant'
+#post '/favorite/region/:id' => 'favorites#add_region'
+
+#rails generate controller Favorites
+#go to controller ---
+#def add_food
+#  @current_user.favorites.create :food_id => params[:food_id]
+  #redirect_back :fallback_location => root_path -- whatever page they were on. ---- MIGHT not work for me. because it's a tag/form.
+
+# in show page: -- can i use this add to
+# <%= button_to "Add to Favorites" favorite_food_path (@food)%>
+#will have a favorite on the website. when clicked = favorite.last in console
+
+#Create a favorites pages
+#this can have @current_user.favorites.each do |favorite|
+#  paragraph
+#  <% if favorite.food.present? %>
+#    <%= link_to favorite.food.name, favorite_food %>
+#    <%= favorite.food.score %>
+#    <% end %>
+#  end paragram
+#<% end %>
+#in routes = get ''/favorites/' => 'favorites#index'
+
+#<%= if @current_user.favorites.map(&:food_id).includes(@food.id) %>
+#  remove favorite
+#
+# create a user_team model

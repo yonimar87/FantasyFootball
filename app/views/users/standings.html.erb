@@ -1,2 +1,6 @@
 <h1>Fantasy Standings</h1>
 <p>Table of current users below</p>
+
+<% @users.each do |user| %>
+  <p><%= user.email %> score:   <%= user.score %></p>
+<% end %>

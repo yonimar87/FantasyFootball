@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   resources :players
   root :to => 'pages#home'
   resources :users, :only => [:index, :new, :create, :my_team, :my_players]
-  put '/add_users' => 'users#add_player'#:except => [:destroy]
+  post '/add_players' => 'users#add_players'#:except => [:destroy]
   resources :teams, :only => :show
+  post '/delete_players' => 'users#delete_players'
 
   get '/results' => 'pages#results'
   get '/my_team' => 'users#standings', :as => 'standings'

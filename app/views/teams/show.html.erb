@@ -1,10 +1,10 @@
 <h1>Below are <%= @team.name %>'s players</h1>
-<%= form_tag add_users_path, method => :put do %>
+<%= form_tag add_players_path do %>
 <% @players.each do |player| %>
   <%= image_tag player.image, :class =>'thumb' if player.image.present? %>
     <%= link_to player.name, player_path(player.id) %>
     Price: <%= player.price %>
-    <%= check_box("tag", player.id, {checked: false}) %>
+    <%= check_box_tag("player_ids[]", player.id) %>
   <% end %>
-<%= player.submit %>
+  <%= submit_tag 'Choose Players' %>
 <% end %>
