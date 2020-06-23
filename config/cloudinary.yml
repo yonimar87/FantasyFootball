@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: djmdqdkhp
+  api_key: '596867175991259'
+  api_secret: oAGPRfJG2IoV9djpXXMiwzpRPFQ
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: djmdqdkhp
+  api_key: '596867175991259'
+  api_secret: oAGPRfJG2IoV9djpXXMiwzpRPFQ
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: djmdqdkhp
+  api_key: '596867175991259'
+  api_secret: oAGPRfJG2IoV9djpXXMiwzpRPFQ
+  enhance_image_tag: true
+  static_file_support: false
