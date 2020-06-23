@@ -26,7 +26,8 @@ class PagesController < ApplicationController
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     request = Net::HTTP::Get.new(url4)
     request["x-rapidapi-host"] = 'livescore6.p.rapidapi.com'
-    request["x-rapidapi-key"] = 'd8e9e76cbamsh5844043ab7934adp1a346djsn6bd439b49aa1'
+    request["x-rapidapi-key"] = Rails.application.secrets.RapidAPI_Key
+
     @response = JSON.parse(http.request(request).read_body)
   end
 
