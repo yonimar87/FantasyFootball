@@ -101,7 +101,7 @@
           </tr>
       </thead>
       <tbody>
-        <%= @response['Stages'].count %>
+        <%= @response['Stages'] %>
         <% @response['Stages'][0]['Events'].each do |upcoming|  %>
            <tr>
               <td><%= upcoming["T1"][0]["Nm"]%></td>
