@@ -101,22 +101,20 @@
           </tr>
       </thead>
       <tbody>
-        <%= @response['Stages'] %>
-        <% @response['Stages'][0]['Events'].each do |upcoming|  %>
-           <tr>
-              <td><%= upcoming["T1"][0]["Nm"]%></td>
-              <td><% if upcoming["Tr1"]%> <%= upcoming["Tr1"]%>
-                <% else  %> ?
-                <% end %>
-                :
-                <% if upcoming["Tr2"]%> <%= upcoming["Tr2"]%>
-                  <% else  %> ?
-                  <% end %> </td>
-              <td><%= upcoming["T2"][0]["Nm"]%></td>
-          </tr>
-          <% end  %>
-      </tbody>
-  </table>
-</p>
-
-<%=@prediction%>
+        <%= @response['Stages'].count %>
+               <% @response['Stages'][0]['Events'].each do |upcoming|  %>
+                  <tr>
+                     <td><%= upcoming["T1"][0]["Nm"]%></td>
+                     <td><% if upcoming["Tr1"]%> <%= upcoming["Tr1"]%>
+                       <% else  %> ?
+                       <% end %>
+                       :
+                       <% if upcoming["Tr2"]%> <%= upcoming["Tr2"]%>
+                         <% else  %> ?
+                         <% end %> </td>
+                     <td><%= upcoming["T2"][0]["Nm"]%></td>
+                 </tr>
+                 <% end  %>
+             </tbody>
+         </table>
+       </p>
