@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'teams/show'
-  resources :players
-  root :to => 'pages#home'
   resources :users, :only => [:index, :new, :create, :my_team, :my_players]
-  post '/add_players' => 'users#add_players'#:except => [:destroy]
   resources :teams, :only => :show
+  resources :players
+
+  root :to => 'pages#home'
+
+  post '/add_players' => 'users#add_players'#:except => [:destroy]
   post '/delete_players' => 'users#delete_players'
 
   get '/results' => 'pages#results'
@@ -15,6 +16,6 @@ Rails.application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' =>  'session#destroy'
 
-  
+
 
 end

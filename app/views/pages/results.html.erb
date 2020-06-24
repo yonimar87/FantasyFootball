@@ -1,120 +1,133 @@
-<h1>Follow on Football news and results below</h1>
+<h1>Follow on Football tables and results below</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">Premier League Table</th>
-        </tr>
-        <tr>
-          <td>Position</td>
-          <td>Name</td>
-          <td>Played</td>
-          <td>Won</td>
-          <td>Draw</td>
-          <td>Loss</td>
-          <td>Points</td>
-        </tr>
-    </thead>
-    <tbody>
-      <% @total.each do |team| %>
-         <tr>
-            <td><%= team[:position] %></td>
-            <td><%= team[:name] %></td>
-            <td><%= team[:played] %></td>
-            <td><%= team[:wins] %></td>
-            <td><%= team[:draws] %></td>
-            <td><%= team[:losses] %></td>
-            <td><%= team[:points] %></td>
-        </tr>
-        <% end  %>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">Championship</th>
-        </tr>
-        <tr>
-          <td>Position</td>
-          <td>Name</td>
-          <td>Played</td>
-          <td>Won</td>
-          <td>Draw</td>
-          <td>Loss</td>
-          <td>Points</td>
-        </tr>
-    </thead>
-    <tbody>
-      <% @total2.each do |team| %>
-         <tr>
-            <td><%= team[:position] %></td>
-            <td><%= team[:name] %></td>
-            <td><%= team[:played] %></td>
-            <td><%= team[:wins] %></td>
-            <td><%= team[:draws] %></td>
-            <td><%= team[:losses] %></td>
-            <td><%= team[:points] %></td>
-        </tr>
-        <% end  %>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">League 1</th>
-        </tr>
-        <tr>
-          <td>Position</td>
-          <td>Name</td>
-          <td>Played</td>
-          <td>Won</td>
-          <td>Draw</td>
-          <td>Loss</td>
-          <td>Points</td>
-        </tr>
-    </thead>
-    <tbody>
-      <% @total3.each do |team| %>
-         <tr>
-            <td><%= team[:position] %></td>
-            <td><%= team[:name] %></td>
-            <td><%= team[:played] %></td>
-            <td><%= team[:wins] %></td>
-            <td><%= team[:draws] %></td>
-            <td><%= team[:losses] %></td>
-            <td><%= team[:points] %></td>
-        </tr>
-        <% end  %>
-    </tbody>
-</table>
+<div class="row">
+  <div class="col-md-6">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Premier League Table</th>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td>Name</td>
+              <td>Played</td>
+              <td>Won</td>
+              <td>Draw</td>
+              <td>Loss</td>
+              <td>Points</td>
+            </tr>
+        </thead>
+        <tbody>
+          <% @total.each do |team| %>
+             <tr>
+                <td><%= team[:position] %></td>
+                <td><%= team[:name] %></td>
+                <td><%= team[:played] %></td>
+                <td><%= team[:wins] %></td>
+                <td><%= team[:draws] %></td>
+                <td><%= team[:losses] %></td>
+                <td><%= team[:points] %></td>
+            </tr>
+            <% end  %>
+        </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Championship</th>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td>Name</td>
+              <td>Played</td>
+              <td>Won</td>
+              <td>Draw</td>
+              <td>Loss</td>
+              <td>Points</td>
+            </tr>
+        </thead>
+        <tbody>
+          <% @total2.each do |team| %>
+             <tr>
+                <td><%= team[:position] %></td>
+                <td><%= team[:name] %></td>
+                <td><%= team[:played] %></td>
+                <td><%= team[:wins] %></td>
+                <td><%= team[:draws] %></td>
+                <td><%= team[:losses] %></td>
+                <td><%= team[:points] %></td>
+            </tr>
+            <% end  %>
+        </tbody>
+    </table>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">League 1</th>
+            </tr>
+            <tr>
+              <td>Position</td>
+              <td>Name</td>
+              <td>Played</td>
+              <td>Won</td>
+              <td>Draw</td>
+              <td>Loss</td>
+              <td>Points</td>
+            </tr>
+        </thead>
+        <tbody>
+          <% @total3.each do |team| %>
+             <tr>
+                <td><%= team[:position] %></td>
+                <td><%= team[:name] %></td>
+                <td><%= team[:played] %></td>
+                <td><%= team[:wins] %></td>
+                <td><%= team[:draws] %></td>
+                <td><%= team[:losses] %></td>
+                <td><%= team[:points] %></td>
+            </tr>
+            <% end  %>
+        </tbody>
+    </table>
+  </div>
 
-<p>
-  <table>
-      <thead>
-          <tr>
-              <th colspan="2">Upcoming Premier League Games</th>
-          </tr>
-          <tr>
-            <td>Home Team</td>
-            <td>Current Score</td>
-            <td>Away Team</td>
-          </tr>
-      </thead>
-      <tbody>
-        <%= @response['Stages'].count %>
-        <% @response['Stages'][0]['Events'].each do |upcoming|  %>
-           <tr>
-              <td><%= upcoming["T1"][0]["Nm"]%></td>
-              <td><% if upcoming["Tr1"]%> <%= upcoming["Tr1"]%>
-                <% else  %> ?
-                <% end %>
-                :
-                <% if upcoming["Tr2"]%> <%= upcoming["Tr2"]%>
+  <div class="col-md-6 offset-md-2">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Upcoming Premier League Games</th>
+            </tr>
+            <tr>
+              <td>Home Team</td>
+              <td>Current Score</td>
+              <td>Away Team</td>
+            </tr>
+        </thead>
+        <tbody>
+          <%= @response['Stages'].count %>
+          <% @response['Stages'][0]['Events'].each do |upcoming|  %>
+             <tr>
+                <td><%= upcoming["T1"][0]["Nm"]%></td>
+                <td><% if upcoming["Tr1"]%> <%= upcoming["Tr1"]%>
                   <% else  %> ?
-                  <% end %> </td>
-              <td><%= upcoming["T2"][0]["Nm"]%></td>
-          </tr>
-          <% end  %>
-      </tbody>
-  </table>
-</p>
+                  <% end %>
+                  :
+                  <% if upcoming["Tr2"]%> <%= upcoming["Tr2"]%>
+                    <% else  %> ?
+                    <% end %> </td>
+                <td><%= upcoming["T2"][0]["Nm"]%></td>
+            </tr>
+            <% end  %>
+        </tbody>
+    </table>
+  </div>
+</div>
