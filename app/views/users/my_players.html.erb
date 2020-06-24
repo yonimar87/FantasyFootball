@@ -1,7 +1,7 @@
 <h1>Below is your selected team</h1>
 
-<p>
-  <ol>
+<div class="row">
+  <ol class="col-md-4 offset-md-4">
     <%= form_tag delete_players_path do %>
     <% @current_user.players.each do |player|%>
     <li><%= player[:name] %> - <%= player[:score] %>
@@ -11,4 +11,4 @@
     <%= submit_tag 'Delete Players' %>
     <% end  %>
   </ol>
-</p>
+</div>

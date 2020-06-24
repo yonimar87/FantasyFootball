@@ -26,6 +26,7 @@ class UsersController < ApplicationController
         params[:player_ids].each do |id|
           if  @current_user.players.where(id:id).empty?
             @current_user.players << Player.find(id)
+            @current_user.save
           else
             flash[:alert] = "Player is already selected"
             redirect_back(fallback_location: root_path)
@@ -33,7 +34,7 @@ class UsersController < ApplicationController
           end
         end
       end
-    @current_user.save
+
     redirect_to my_players_path
   end
 

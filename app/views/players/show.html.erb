@@ -1,9 +1,16 @@
 <h1><%= @player.name %></h1>
 
-  <%= image_tag @player.image, :class =>'feature' if @player.image.present? %>
-  <ul>
-    <li>Name: <%= @player.name %></li>
-    <li>Nationality: <%= @nationality[:country] %></li>
-    <li>Position: <%= @player.position %></li>
-    <li>Last Score:  <%= @player.score %></li>
-  </ul>
+<div class="row">
+<div class="card col-md-4 offset-md-4" style="width: 18rem;">
+  <%= image_tag @player.image, :class =>'card-img-top' if @player.image.present? %>
+  <div class="card-body">
+    <h5 class="card-title"><%= @player.name %></h5>
+    <hr>
+    <ul class="card-text">
+      <li>Nationality: <%= @nationality[:country] %></li>
+      <li>Position: <%= @player.position %></li>
+      <li>Last Score:  <%= @player.score %></li>
+    </ul>
+  </div>
+</div>
+</div>
