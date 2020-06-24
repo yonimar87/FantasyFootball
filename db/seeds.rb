@@ -1,9 +1,9 @@
 User.destroy_all
-u1 = User.create :email => 'yoni@yoni.com', :password => 'burger' #:admin => true
-u2 = User.create :email => 'craigsy@ga.co', :password => 'chicken'
-u2 = User.create :email => 'ivan@ivan.com', :password => 'ivan'
-u2 = User.create :email => 'james@james.com', :password => 'james'
-u2 = User.create :email => 'kale@kale.com', :password => 'kale'
+u1 = User.create :name => 'Yoni', :email => 'yoni@yoni.com', :password => 'burger' #:admin => true
+u2 = User.create :name => 'Craig',:email => 'craigsy@ga.co', :password => 'chicken'
+u2 = User.create :name => 'Ivan',:email => 'ivan@ivan.com', :password => 'ivan'
+u2 = User.create :name => 'James',:email => 'james@james.com', :password => 'james'
+u2 = User.create :name => 'Kale',:email => 'kale@kale.com', :password => 'kale'
 puts "#{ User.count } users"
 
 Player.destroy_all
