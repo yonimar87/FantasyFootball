@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def index #Can only be viewed as admin
     @players = Player.all
-    render :index
+    render :admin
   end
 
   def new
