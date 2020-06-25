@@ -9,50 +9,52 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class='container text-center'>
-
-    <nav>
-      <ul class="nav nav-pills nav-justified">
-          <% if @current_user.present? %>
-          <% if @current_user.admin? %>
-            <li class="nav-item ">
-            <%= link_to "All Users", '/users', :class => 'nav-link ' %>
+  <body>
+    <aside>
+    </aside>
+    <div class='container text-center'>
+      <nav>
+        <ul class="nav nav-pills nav-justified">
+            <% if @current_user.present? %>
+            <% if @current_user.admin? %>
+              <li class="nav-item ">
+              <%= link_to "Update Player Scores", '/users', :class => 'nav-link ' %>
+              </li>
+            <% end  %>
+            <li class="nav-item">
+                <%= link_to 'Home', root_path, :class=> "nav-link" %>
             </li>
-          <% end  %>
-          <li class="nav-item">
-              <%= link_to 'Home', root_path, :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'View EPL Table and News', '/results', :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'Standings', standings_path, :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'My Players', my_players_path, :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'Available Players', players_path, :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'Log out', login_path, :method => 'delete', :class=> "nav-link" %>
-          </li>
-          <% else %>
-          <li class="nav-item">
-              <%= link_to 'Sign Up', new_user_path, :class=> "nav-link" %>
-          </li>
-          <li class="nav-item">
-              <%= link_to 'Log In', login_path, :class=> "nav-link" %>
-          </li>
-          <% end %>
-      </ul>
-    </nav>
-    <% flash.each do |type, msg| %>
-      <div>
-        <%= msg %>
-      </div>
-    <% end %>
+            <li class="nav-item">
+                <%= link_to 'Tables and Upcoming Games', '/results', :class=> "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'Standings', standings_path, :class=> "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'My Players', my_players_path, :class=> "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'Available Players', players_path, :class=> "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'Log out', login_path, :method => 'delete', :class=> "nav-link" %>
+            </li>
+            <% else %>
+            <li class="nav-item">
+                <%= link_to 'Sign Up', new_user_path, :class=> "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to 'Log In', login_path, :class=> "nav-link" %>
+            </li>
+            <% end %>
+        </ul>
+      </nav>
+      <% flash.each do |type, msg| %>
+        <div>
+          <%= msg %>
+        </div>
+      <% end %>
     <%= yield %>
-
+    </div>
   </body>
 </html>

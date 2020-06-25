@@ -4,6 +4,13 @@ class PlayersController < ApplicationController
     @teams = Team.all
   end
 
+  def update
+    @player = Player.find params[:id]
+    @player.score = params[:player][:score]
+    @player.save
+    redirect_to '/users'
+  end
+
   # def find_player_based_team
   #   @team_id = 7
   #   @teamplayer = Team.find(7).players

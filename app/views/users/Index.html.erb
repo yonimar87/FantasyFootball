@@ -1,5 +1,10 @@
 <h1>All players are below. Please update the score</h1>
 
-<% @users.each do |user| %>
-<p><%= user.email %></p>
-<% end  %>
+<% @players.each do |player| %>
+<%= form_for player do |player_score| %>
+  <%= player_score.text_field :name %>
+  <%= player_score.label :score  %>
+  <%= player_score.text_field :score, :required => true, :autofocus => true %>
+  <%= player_score.submit %>
+<% end %>
+<% end %>

@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
 
+  require 'uri'
+  require 'net'
+  require 'openssl'
+
   def home
   end
 
@@ -29,8 +33,6 @@ class PagesController < ApplicationController
 
     @response = JSON.parse(http.request(request).read_body)
   end
-
-
 
   def build_teams(team_data_xml)
       team_data_xml.length.times.map do |i|

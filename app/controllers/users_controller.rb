@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :check_for_admin, :check_for_login, :only => [:index]
 
   def index
-    @users = User.all
+    @players = Player.all
   end
 
   def new
