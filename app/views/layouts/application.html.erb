@@ -10,12 +10,10 @@
   </head>
 
   <body>
-    <aside>
-    </aside>
-    <div class='container text-center'>
+    <div class='container text-center'> <!-- Bootstrap. -->
       <nav>
         <ul class="nav nav-pills nav-justified">
-            <% if @current_user.present? %>
+            <% if @current_user.present? %><!-- Making sure that the user is present. If user is admin then can update player scores. -->
             <% if @current_user.admin? %>
               <li class="nav-item ">
               <%= link_to "Update Player Scores", '/users', :class => 'nav-link ' %>
@@ -39,7 +37,7 @@
             <li class="nav-item">
                 <%= link_to 'Log out', login_path, :method => 'delete', :class=> "nav-link" %>
             </li>
-            <% else %>
+            <% else %> <!-- Below is the links available for the people who are not logged in -->
             <li class="nav-item">
                 <%= link_to 'Sign Up', new_user_path, :class=> "nav-link" %>
             </li>
@@ -49,7 +47,7 @@
             <% end %>
         </ul>
       </nav>
-      <% flash.each do |type, msg| %>
+      <% flash.each do |type, msg| %> <!-- Error flash messages from bootstrap for player choices.  -->
         <div>
           <%= msg %>
         </div>

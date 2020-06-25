@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
 
-  require 'uri'
-  require 'net'
-  require 'openssl'
-
   def home
   end
+
+#The below method has a few different things going through it. The URL1-3 are the web scraping done using the two methods below
+#Literlaly just found it online.
+#URL4 is the API used in order to get the upcoming games using LiveScore. JSON was added as I wasn't sure if it was reading well initially.
 
   def results
     url = "https://www.theguardian.com/football/premierleague/table"
@@ -30,7 +30,6 @@ class PagesController < ApplicationController
     request = Net::HTTP::Get.new(url4)
     request["x-rapidapi-host"] = 'livescore6.p.rapidapi.com'
     request["x-rapidapi-key"] = Rails.application.secrets.RapidAPI_Key
-
     @response = JSON.parse(http.request(request).read_body)
   end
 
@@ -41,9 +40,8 @@ class PagesController < ApplicationController
       end
     end
 
-    def build_team(source)
+  def build_team(source)
       team_info = source.split("\n").select { |s| s != "" }
-
       {
         position: team_info[0].to_i,
         name: team_info[1],
@@ -53,5 +51,5 @@ class PagesController < ApplicationController
         losses: team_info[5].to_i,
         points: team_info[9].to_i
       }
-    end
   end
+end

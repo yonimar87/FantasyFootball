@@ -1,5 +1,5 @@
 <h1>All players are below. Please update the score</h1>
-
+ <!-- This is for the update players score page. It pretty much follows a normal form. Only admin can update the scores. -->
 <% @players.each do |player| %>
 <%= form_for player do |player_score| %>
   <%= player_score.text_field :name %>

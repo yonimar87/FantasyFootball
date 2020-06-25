@@ -2,7 +2,8 @@
 
 <div class="card-group">
 
-<% @teams.each do |t| %>
+<% @teams.each do |t| %>  <!-- Loop that shows all teams. There is actually a problem with this because if I add more teams to the database
+then instead of fitting 4 per row, it actually makes the row longer and longer and it starts looking worse. What would you recommend? -->
 <div class="card" style="width: 18rem;">
   <%= link_to t.name, team_path(t.id), :class => "btn btn-primary"%>
   <%= image_tag t.image, :class => "card-img" %>

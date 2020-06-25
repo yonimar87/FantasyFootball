@@ -20,7 +20,7 @@ The following models were used:
       1. Teams
       2. Players
       3. Users
-      4. Nationalities
+      4. Nationalities // this is only used in order to provide a nationality on the player view page.
 
 The following Gems were added:
 1. 'bcrypt', '~> 3.1.7' - For Password Protection
