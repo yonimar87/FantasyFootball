@@ -22,20 +22,20 @@ class UsersController < ApplicationController
   end
 
   def add_players #this is the function to add players to the current_users team. I've got a maximum amount of players.
-      if @current_user.players.count+ params[:player_ids].count > 14 #If params count is >14 then the below is displayed.
-        flash[:alert] = "You have selected too many players. You can only have a maximum of 14 players in your team"
-      else
-        params[:player_ids].each do |id|
-          if  @current_user.players.where(id:id).empty? #if the id is currently not present in the my_players then we can add a player. If it is present, then player is already selected.
-            @current_user.players << Player.find(id)
-            @current_user.save
-          else
-            flash[:alert] = "Player is already selected"
-            redirect_back(fallback_location: root_path)
-            return #I kept on getting errors saying that you can only do one redirect per method. However if a method is returned then you can do multiple.
-          end
+    if @current_user.players.count+ params[:player_ids].count > 14 #If params count is >14 then the below is displayed.
+      flash[:alert] = "You have selected too many players. You can only have a maximum of 14 players in your team"
+    else
+      params[:player_ids].each do |id|
+        if @current_user.players.where(id:id).empty? #if the id is currently not present in the my_players then we can add a player. If it is present, then player is already selected.
+          @current_user.players << Player.find(id)
+          @current_user.save
+        else
+          flash[:alert] = "Player is already selected"
+          redirect_back(fallback_location: root_path)
+          return #I kept on getting errors saying that you can only do one redirect per method. However if a method is returned then you can do multiple.
         end
       end
+    end
     redirect_to my_players_path
   end
 
@@ -64,5 +64,4 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
-
 end

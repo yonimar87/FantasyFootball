@@ -1,17 +1,20 @@
 <h1>Below are <%= @team.name %>'s players</h1>
+
 <%= form_tag add_players_path do %>
-  <div class="card-columns">
-    <% @players.each do |player| %>
-      <div class="card">
-        <%= image_tag player.image, :class =>"card-img-top" if player.image.present? %>
-        <div class="card-body">
-          <h1 class="card-title"> <%= player.name %></h1>
-          <%= check_box_tag("player_ids[]", player.id) %>
-          <p class="card-text">Previous Score: <%= player.score %></p>
-          <%= link_to player.name, player_path(player.id), :class => "btn btn-primary" %>
-        </div>
+
+<div class="card-columns">
+  <% @players.each do |player| %>
+    <div class="card">
+      <%= image_tag player.image, :class =>"card-img-top" if player.image.present? %>
+      <div class="card-body">
+        <h1 class="card-title"> <%= player.name %></h1>
+        <%= check_box_tag("player_ids[]", player.id) %>
+        <p class="card-text">Previous Score: <%= player.score %></p>
+        <%= link_to player.name, player_path(player.id), :class => "btn btn-primary" %>
       </div>
-    <% end %>
-  </div>
-  <%= submit_tag 'Choose Players', :class => "choose" %>
+    </div>
+  <% end %>
+</div>
+
+<%= submit_tag 'Choose Players', :class => "choose" %>
 <% end %>

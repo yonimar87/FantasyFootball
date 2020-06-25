@@ -15,9 +15,9 @@ class PlayersController < ApplicationController
   def show #This is a method done so if a player in the seed has nationality through the associations it is displayed - however if not, then the nationality is unknown.
     @player = Player.find params[:id]
     if Nationality.exists?(id: @player.nationality_id)
-    @nationality = Nationality.find(@player.nationality_id)
+      @nationality = Nationality.find(@player.nationality_id)
     else
-    @nationality = Nationality.where(:country => 'Unknown').first
+      @nationality = Nationality.where(:country => 'Unknown').first
     end
   end
 end

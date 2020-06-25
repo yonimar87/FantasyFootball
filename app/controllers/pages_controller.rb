@@ -34,22 +34,22 @@ class PagesController < ApplicationController
   end
 
   def build_teams(team_data_xml)
-      team_data_xml.length.times.map do |i|
-        source = team_data_xml[i].children.text
-        build_team(source)
-      end
+    team_data_xml.length.times.map do |i|
+      source = team_data_xml[i].children.text
+      build_team(source)
     end
+  end
 
   def build_team(source)
-      team_info = source.split("\n").select { |s| s != "" }
-      {
-        position: team_info[0].to_i,
-        name: team_info[1],
-        played: team_info[2].to_i,
-        wins: team_info[3].to_i,
-        draws: team_info[4].to_i,
-        losses: team_info[5].to_i,
-        points: team_info[9].to_i
-      }
+    team_info = source.split("\n").select { |s| s != "" }
+    {
+      position: team_info[0].to_i,
+      name: team_info[1],
+      played: team_info[2].to_i,
+      wins: team_info[3].to_i,
+      draws: team_info[4].to_i,
+      losses: team_info[5].to_i,
+      points: team_info[9].to_i
+    }
   end
 end

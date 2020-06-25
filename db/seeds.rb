@@ -4,6 +4,8 @@ u2 = User.create :name => 'Craig',:email => 'craigsy@ga.co', :password => 'chick
 u2 = User.create :name => 'Ivan',:email => 'ivan@ivan.com', :password => 'ivan'
 u2 = User.create :name => 'James',:email => 'james@james.com', :password => 'james'
 u2 = User.create :name => 'Kale',:email => 'kale@kale.com', :password => 'kale'
+u2 = User.create :name => 'Aleks',:email => 'aleks@aleks.com', :password => 'joel'
+u2 = User.create :name => 'Joel',:email => 'joel@joel.com', :password => 'audrey'
 puts "#{ User.count } users"
 
 Player.destroy_all
