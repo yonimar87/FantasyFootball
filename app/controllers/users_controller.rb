@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-  before_action :check_for_admin, :check_for_login, :only => [:index]
+  before_action :check_for_admin, :only => [:index]
+  before_action :check_for_login, :except => [:new, :create]
 
   def index #Can only be viewed as admin
     @players = Player.all
+    render :index
   end
 
   def new
@@ -55,7 +57,7 @@ class UsersController < ApplicationController
       user.score = sum
       user.save
     end
-    @users = @users.order('score DESC') #Descending order for the list. 
+    @users = @users.order('score DESC') #Descending order for the list.
   end
 
   private
