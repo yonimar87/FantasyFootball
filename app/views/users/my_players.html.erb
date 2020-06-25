@@ -1,10 +1,10 @@
 <h1>Below is your selected team</h1>
  <!-- Users can delete players from their team if they want to make swaps-->
 <div class="row">
-  <ol class="col-md-4 offset-md-4">
+  <ol class="list col-md-4 offset-md-4">
     <%= form_tag delete_players_path do %>
     <% @current_user.players.each do |player|%>
-    <li><%= player[:name] %> - <%= player[:score] %>
+    <li><%= image_tag player[:image], :class => 'thumb'%> <%= player[:name] %> - <%= player[:score] %>
     <%= check_box_tag("player_ids[]", player.id) %>
     </li>
     <% end  %>

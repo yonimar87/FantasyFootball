@@ -1,5 +1,5 @@
 # FantasyFootball
-Yoni's basic version of Fantasy Football - Project -1
+# Yoni's basic version of Fantasy Football - Project -1
 
 To Play:
 1.  Create an account. This will log you in straight away.
@@ -8,7 +8,7 @@ To Play:
 4.  Scores are updated after each game week.
 
 
-Additional Tabs to visit:
+#### Additional Tabs to visit:
 1.  The "Standings" tab will show the user where they stand compared to other users in the competition.
 2.  The "Tables and Upcoming Games" showcases the Premier League upcoming games as well as current table. We also included the Championship and League 1 table.
 
